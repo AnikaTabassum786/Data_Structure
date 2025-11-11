@@ -11,6 +11,6 @@ const user:{
     age: 26,
 }
 
-user.name='jilmil'
+
 
 
