@@ -16,7 +16,8 @@ console.log(typeof(secondArray))
 
 // triple
 
-const thirdArray : [string, string, number]= ['Dhaka','Rajshai',26]
+const thirdArray : [string, string, number,boolean]= ['Dhaka','Rajshahi',26,false]
+// thirdArray.push(false)
 console.log(thirdArray)
 
 

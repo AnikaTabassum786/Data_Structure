@@ -19,3 +19,40 @@ const addArrow = (num3: number, num4:number): number => {
 }
 
 addArrow(3,4)
+
+
+const poorUser={
+  name:"Anika",
+  balance:0,
+  bonus:0,
+  totalSalary:0,
+
+  addBalance (value:number): number {
+   this.balance = this.balance + value
+   return this.balance
+  },
+   
+  addBonus(value:number) : number {
+    this.bonus = this.bonus + value
+    return this.bonus
+  }, 
+
+  salary() : number {
+   this.totalSalary = this.balance + this.bonus
+   return this.totalSalary
+  }
+
+}
+
+poorUser.addBalance(10000)
+poorUser.addBonus(2000)
+poorUser.salary()
+
+
+
+console.log(`Salary,${poorUser.balance}`)
+console.log(`Eid Bonus,${poorUser.bonus}`)
+console.log("Total Amount",poorUser.salary())
+
+
+
