@@ -3,7 +3,7 @@
 // ? operator chaining
 
 
-const biyerJonnoEligible = (age:number)=>{
+const biyerJonnoEligible = (age: number) => {
 
     // if (age>=21){
     //     console.log("Eligible for marry")
@@ -12,7 +12,7 @@ const biyerJonnoEligible = (age:number)=>{
     //     console.log("Not Eligible for marry")
     // }
 
-    const boyos = age>=21 ?'Eligible for marry':'Not Eligible for marry'
+    const boyos = age >= 21 ? 'Eligible for marry' : 'Not Eligible for marry'
     console.log(boyos)
     return boyos
 }
@@ -48,13 +48,28 @@ console.log(myTheme)
 console.log('-------------------')
 
 const isAuthenticated = null;
-const resultWithTernary = isAuthenticated ? isAuthenticated :'Yor are guest'//null is a falsy
+const resultWithTernary = isAuthenticated ? isAuthenticated : 'Yor are guest'//null is a falsy
 const resultWithNullish = isAuthenticated ?? 'Yor are guest'
-console.log({resultWithTernary},{resultWithNullish})
+console.log({ resultWithTernary }, { resultWithNullish })
 console.log('-------------------')
 
 
+// Example of optional chaining
 
+const user: {
+    address: {
+        city: string,
+        town: string;
+        postalCode?: string;
+    }
+} = {
+    address: {
+        city: "Dhaka",
+        town: "Bonani",
+    }
+};
 
+const postOffice = user?.address?.postalCode;
+console.log(postOffice) //undefined. This undefined sometimes crash my application. It safe to use optional chain
 
 
