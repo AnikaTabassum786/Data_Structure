@@ -31,8 +31,11 @@ const coordinates2:Coordinates<string,string> =['20','30']
 // console.log(coordinates1,coordinates2)
 
 //Example-3- Array of object
+ 
 
-const userList: GenericArray<{name:string,age:number}>=[
+type User = {name:string,age:number}
+
+const userList: GenericArray<User>=[
     {
         name:'X',
         age:10
