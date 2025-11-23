@@ -36,5 +36,5 @@ const getUser=(user: NormalUser|AdminUser)=>{
     console.log(`This is ${user.name}`)
  }
 }
-getUser({name:"Anik"})
+getUser({name:"Orin"})
 getUser({name:"Anika",role:'Admin'})
